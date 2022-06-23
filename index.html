@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Agate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Source+Serif+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c3cd310971.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <section class="main-section">
+        <nav class="website-menu">
+            <ul class="website-menu__ul">
+                <li><a href="#gallery" class="website-menu__items--restaurant-name">Agate</a></li>
+                <li><a href="#about-restourant" class="website-menu__items">О ресторане</a></li>
+                <li><a href="#website-menu" class="website-menu__items">Меню</a></li>
+                <li><a href="#contacts" class="website-menu__items">Контакты</a></li>
+            </ul>
+        </nav>
+        <h1 class="main-section__header">Ресторан авторской кухни</h1>
+        <p class="main-section__text">Легкая атмосфера, европейская и азиатская кухня</p>
+        <a class="button" href="#contacts"><input class="contact-button" type="button" id="contact" value="Связаться с нами"></a>
+    </section>
+
+    <section class="introduction" id="about-restourant">
+        <div class="introduction__field">
+            <p class="introduction__text">Мы понравимся вам своей легкой атмосферой, уровнем кухни и подачей блюд. Мы любим аристократичную простоту в интерьере, хорошую музыку и неповторимый ризотто нашего шефа, Максима Болова.</p>
+        </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+        <div class="gallery-section__img"> <img src="restaurant1.png" alt="бар ресторана"> </div>
+        <div class="gallery-section__img"> <img src="restaurant2.png" alt="закуска"> </div>
+        <div class="gallery-section__img"> <img src="restaurant3.png" alt="основное блюдо"> </div>
+        <div class="gallery-section__img"> <img src="restaurant4.png" alt="буратта"> </div>
+        <div class="gallery-section__img"> <img src="restaurant5.png" alt="интерьер ресторана"> </div>
+        <div class="gallery-section__img"> <img src="restaurant6.png" alt="десерт"> </div>
+    </section>
+
+    <section class="dishes" id="website-menu">
+        <h2 class="dishes__header">Избранные блюда нашего меню</h2>
+        <p class="dishes__text">Осеннее меню от шеф повара</p>
+        <div class="dishes-conteiner">
+            <article class="dishes-content">
+                <div class="dishes__wrapper1"> <img src="soup.png" alt="тыквенный суп" /> </div>
+                <h3 class="dishes-conteiner__header">Тыквенный суп</h3>
+                <p class="dishes-conteiner__text">Осенний тыквенный суп. В игридиентах тыква, шампиньоны, щепотка мускатного ореха.</p>
+                <p class="dishes-conteiner__price">1980грн.</p>
+            </article>
+            <article class="dishes-content">
+                <div class="dishes__wrapper2"> <img src="parpadelle.png" alt="парпаделле" /> </div>
+                <h3 class="dishes-conteiner__header">Парпаделле</h3>
+                <p class="dishes-conteiner__text">Итальянская паста с богатым вкусом свеклы и томатным песто, подается с базиликом и горошком.</p>
+                <p class="dishes-conteiner__price">1400грн.</p>
+            </article>
+            <article class="dishes-content">
+                <div class="dishes__wrapper3"> <img src="salad.png" alt="линч салат" /> </div>
+                <h3 class="dishes-conteiner__header">Линч салат</h3>
+                <p class="dishes-conteiner__text">Питательный утренний салат - это просто белковая бомба для любителей фитнеса.</p>
+                <p class="dishes-conteiner__price">1300грн.</p>
+            </article>
+        </div>
+        <a class="button" href="#website-menu"><input class="menu-button" type="button" id="menu" value="Посмотреть меню"/></a>
+    </section>
+
+    <section class="chef-section">
+        <div class="chef-agate">
+            <img src="chef.png" alt="шев повар AGATE">
+            <h4 class="chef-section__header">Максим Болов</h4>
+            <p class="chef-section__cook">Шев повар AGATE</p>
+            <p class="chef-section__text">Максим - ученик известного шеф повара Ерика Крауа. Принимает участие в крупнейших воркшопах, работал в ресторанах Франции, Бельгии и Финляндии. У Максима всегда свежее авторское видение меню.
+            </p>
+        </div>
+    </section>
+
+    <footer class="contact-information" id="contacts">
+        <div class="address">
+            <h4 class="contact-information__header"> Свяжитесь с нами </h4>
+            <div class="phone"><a href="tel:+447445572674" class="contact-information__phone-number">+44 7445 572674</a></div>
+            <div class="mail"><a href="yelyzaveta.voskresenska@gmail.com" class="contact-information__mail-address">yelyzaveta.voskresenska@gmail.com</a></div>
+            <div class="map-adress"><a href="#" class="contact-information__map-address">15 Whitton Close, Swavesey</a></div>
+            <p class="contact-information__open-hours"> Мы открыты ежедневно в 12:00 - 12:00</p>
+        </div>
+        <div class="media">
+            <nav class="media-navigation">
+                <a href="#" class="media__items" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="media__items" aria-label="telegram"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#" class="media__items" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

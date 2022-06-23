@@ -1,0 +1,481 @@
+.website-menu {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.42);
+}
+.website-menu ul {
+  display: flex;
+  justify-content: right;
+  margin-right: 20%;
+  padding: 4% 0;
+}
+@media screen and (max-width: 1440px) {
+  .website-menu ul {
+    margin-right: 15%;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .website-menu ul {
+    margin-right: 5%;
+  }
+}
+.website-menu ul li:first-child {
+  text-transform: uppercase;
+  padding-right: 20%;
+  padding-left: 10%;
+}
+.website-menu ul li {
+  list-style-type: none;
+}
+.website-menu ul li:not(:last-child) {
+  margin-right: 2%;
+}
+@media screen and (min-width: 500px) {
+  .website-menu ul li:not(:last-child):not(:first-child)::after {
+    content: "|";
+    color: #FFF;
+    margin: 0 25px;
+    display: inline-block;
+  }
+}
+.website-menu ul li a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 28px;
+}
+@media screen and (max-width: 1024px) {
+  .website-menu ul li a {
+    font-size: 1.1rem;
+    line-height: 23px;
+  }
+}
+.website-menu ul li .website-menu__items--restaurant-name {
+  font-size: 3.1rem;
+}
+
+.dishes {
+  text-align: center;
+  color: #000;
+  padding-top: 100px;
+}
+.dishes h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.dishes p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 31px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.dishes-content {
+  width: calc((100% - 96px) / 3);
+  min-width: 170px;
+}
+.dishes-content .dishes__wrapper1 {
+  position: relative;
+}
+.dishes-content .dishes__wrapper1::before {
+  content: "HOT!";
+  background-color: #B3E151;
+  width: 58px;
+  border-radius: 50%;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 58px;
+  color: #FFF;
+  background-color: #D33B3B;
+}
+.dishes-content .dishes__wrapper2 {
+  position: relative;
+}
+.dishes-content .dishes__wrapper2::before {
+  content: "HOT!";
+  background-color: #B3E151;
+  width: 58px;
+  border-radius: 50%;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 58px;
+  color: #FFF;
+  background-color: #B3E151;
+}
+.dishes-content .dishes__wrapper3 {
+  position: relative;
+}
+.dishes-content .dishes__wrapper3::before {
+  content: "HOT!";
+  background-color: #B3E151;
+  width: 58px;
+  border-radius: 50%;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 58px;
+  color: #FFF;
+  background-color: #E5A434;
+}
+
+.dishes-conteiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 48px;
+  padding: 0px 300px;
+}
+@media screen and (max-width: 1440px) {
+  .dishes-conteiner {
+    padding: 0px 130px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .dishes-conteiner {
+    padding: 0px 42px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .dishes-conteiner {
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
+  }
+}
+.dishes-conteiner h3 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 38px;
+  text-align: left;
+  margin-top: 30px;
+  width: 100%;
+}
+.dishes-conteiner p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 23px;
+  text-align: left;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.dishes-conteiner .dishes-conteiner__price {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 23px;
+}
+.dishes-conteiner img {
+  text-align: left;
+  width: 100%;
+  max-width: 360px;
+}
+
+.menu-button {
+  border-radius: 30px;
+  width: 312px;
+  height: 60px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 25px;
+  margin-top: 60px;
+  border: 2px solid #000;
+  transition-property: all;
+  color: #000;
+}
+.menu-button:hover {
+  border-color: rgb(91, 2, 2);
+}
+
+@media screen and (max-width: 1024px) {
+  .menu-button {
+    height: 48px;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 21px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu-button {
+    width: 180px;
+    height: 38px;
+  }
+}
+.main-section {
+  background-image: url(bacbanner.png);
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.main-section h1 {
+  width: 914px;
+  font-weight: 700;
+  font-size: 4.7rem;
+  line-height: 121.69%;
+  margin: 0 auto;
+  letter-spacing: 0.07em;
+  margin-top: 218px;
+}
+@media screen and (max-width: 1024px) {
+  .main-section h1 {
+    width: 650px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-section h1 {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .main-section h1 {
+    width: 280px;
+  }
+}
+.main-section__text {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 31px;
+  margin-top: 35px;
+}
+
+@media screen and (max-width: 1440px) {
+  .main-section {
+    background-image: url(bacbanner1440px.png);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main-section {
+    background-image: url(bacbanner1024px.png);
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-section {
+    background-image: url(bacbanner768px.png);
+  }
+}
+.gallery-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  flex-direction: row;
+  padding: 0 12px;
+  justify-content: center;
+}
+.gallery-section div {
+  width: calc((90% - 48px) / 2);
+}
+.gallery-section div img {
+  width: 100%;
+}
+
+.introduction {
+  margin-bottom: 100px;
+}
+.introduction div {
+  width: 100%;
+  background: #F3F7EA;
+  padding: 5% 20%;
+}
+.introduction div p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 135.8%;
+}
+
+.contact-button {
+  border-radius: 30px;
+  width: 312px;
+  height: 60px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 25px;
+  margin-top: 60px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  margin-bottom: 10%;
+  transition-property: all;
+}
+.contact-button:hover {
+  border-color: rgb(91, 2, 2);
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-button {
+    width: 248px;
+    height: 48px;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 21px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-button {
+    width: 180px;
+    height: 38px;
+  }
+}
+.contact-information {
+  text-align: center;
+  background-color: #262626;
+  width: 100%;
+  padding: 100px 0;
+  color: #FFF;
+  position: relative;
+}
+.contact-information::after {
+  content: "";
+  background-color: #FFAC1C;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 58px;
+  color: #FFF;
+}
+.contact-information .address h4 {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 81px;
+  margin-bottom: 60px;
+}
+.contact-information .address a {
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 300;
+  font-size: 2.1rem;
+  line-height: 50px;
+  margin: 0 auto;
+}
+.contact-information .address .contact-information__open-hours {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 31px;
+  text-align: center;
+  color: #B1B1B1;
+  margin-top: 60px;
+}
+
+.media nav a {
+  text-decoration: none;
+}
+.media nav a i {
+  transition: all;
+  transition-delay: 0.2s;
+}
+.media nav a i:hover {
+  transform: scale(1.5);
+}
+
+.chef-section {
+  text-align: center;
+  padding: 100px 0px;
+  width: 100%;
+}
+.chef-section img {
+  width: 100%;
+  max-width: 398px;
+}
+.chef-section h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 50px;
+  margin-top: 30px;
+}
+.chef-section .chef-section__cook {
+  color: #474747;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 31px;
+  margin: 30px 0;
+}
+.chef-section .chef-section__text {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 135.8%;
+  margin: 0 250px;
+}
+@media screen and (max-width: 1440px) {
+  .chef-section .chef-section__text {
+    margin: 0 200px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .chef-section .chef-section__text {
+    margin: 0 150px;
+  }
+  .chef-section img {
+    max-width: 282px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .chef-section .chef-section__text {
+    margin: 0 100px;
+  }
+  .chef-section img {
+    max-width: 250px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: Source Serif Pro, Arial, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 1920px;
+}
+
+@media screen and (max-width: 1024px) {
+  * {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  * {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 370px) {
+  * {
+    font-size: 6px;
+  }
+}
+.media-navigation i {
+  color: #FFF;
+  display: inline-block;
+  margin-top: 70px;
+  font-size: 1.8rem;
+}
+.media-navigation a:not(:last-child) {
+  margin-right: 40px;
+}/*# sourceMappingURL=style.css.map */
